@@ -1,0 +1,20 @@
+{% extends "base.html" %} #replace the content here in base.html
+{% block content %}
+<div class="container page-form">
+    <form id="register-form" action="/auth/register" method="post">
+
+        <div class="form-group" style="width: 250px">
+            <label for="email"><p class="font-weight-bold"><p class="font-weight-bold">Email</p></p></label>
+            <input type="email" id="email" class="form-control" name="email">
+        </div>
+
+        <div class="form-group" style="width: 250px">
+            <label for="password"><p class="font-weight-bold">Password</p></label>
+            <input type="password" id="password" class="form-control" name="password">
+        </div>
+
+        <button class="btn btn-primary" type="submit">Sign up</button>
+    </form>
+</div>
+{% endblock %}
+
